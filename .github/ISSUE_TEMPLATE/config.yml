@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 技术交流群
+    url: https://github.com/openlabhub/labhub#技术交流群
+    about: 添加微信 OpenLabHub 进嵌入式技术交流群
+  - name: 邮件联系
+    url: mailto:labhub@yeah.net
+    about: 合作、投稿、推广请联系 labhub@yeah.net

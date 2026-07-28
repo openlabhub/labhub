@@ -1,0 +1,80 @@
+---
+name: 项目投稿
+description: 推荐一个开源项目给 LabHub，我们会撰写实测文章推广
+title: "[项目投稿] "
+labels: ["project-submission", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢推荐项目！请在下方填写项目信息，我们会尽快审核回复。
+
+  - type: input
+    id: project-name
+    attributes:
+      label: 项目名称
+      placeholder: 例如：lit3rick — UP5K FPGA 超声脉冲回波采集板
+    validations:
+      required: true
+
+  - type: input
+    id: github-url
+    attributes:
+      label: GitHub 地址
+      placeholder: https://github.com/xxx/xxx
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 项目简介
+      description: 这个项目做什么？解决什么问题？有什么亮点？
+      placeholder: |
+        200 字以内的项目简介……
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: 硬件清单
+      description: 跑通这个项目需要哪些硬件？型号、购买渠道？
+      placeholder: |
+        - 主控：ESP32-S3 DevKitC
+        - 传感器：xxx
+    validations:
+      required: false
+
+  - type: dropdown
+    id: direction
+    attributes:
+      label: 方向分类
+      options:
+        - 端侧 AI / TinyML
+        - FPGA 开源项目
+        - ESP32 / STM32 / RP2040
+        - Linux 内核 / 驱动
+        - 开源硬件
+        - 通信协议栈
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: 署名（可选）
+      description: 你希望文章如何署名？可以是个人名或团队名
+      placeholder: 张三 / XX 团队
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充资料（可选）
+      description: 实物照片、运行截图、已知踩坑点等
+    validations:
+      required: false
